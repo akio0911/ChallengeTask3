@@ -18,7 +18,6 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var switch1: UISwitch!
     @IBOutlet private weak var switch2: UISwitch!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,29 +27,26 @@ final class ViewController: UIViewController {
     
     // 計算をする
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
         // 入力
-        var num1 = Int(textField1.text ?? "") ?? 0
+        let num1 = Int(textField1.text ?? "") ?? 0
+        let signedNum1: Int
         if switch1.isOn {
-            num1 = -num1
-            label1.text = String(num1.description)
+            signedNum1 = -num1
         } else {
-            label1.text = String(num1)
+            signedNum1 = num1
         }
-        
-        var num2 = Int(textField2.text ?? "") ?? 0
-        if switch2.isOn {
-            num2 = -num2
-            label2.text = String(num2.description)
-        } else {
-            label2.text = String(num2)
-        }
-        
-        // 出力
-        var num3 = num1 + num2
-        label3.text = String(num3)
-        
-    }
-    
-}
+        label1.text = String(signedNum1)
 
+        let num2 = Int(textField2.text ?? "") ?? 0
+        let signedNum2: Int
+        if switch2.isOn {
+            signedNum2 = -num2
+        } else {
+            signedNum2 = num2
+        }
+        label2.text = String(signedNum2)
+
+        // 出力
+        label3.text = String(signedNum1 + signedNum2)
+    }
+}
