@@ -40,14 +40,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-BJ-TRN">
-                                <rect key="frame" x="97" y="319" width="21" height="36"/>
+                                <rect key="frame" x="59" y="319" width="97" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEr-4c-vuJ">
-                                <rect key="frame" x="283" y="319" width="21" height="36"/>
+                                <rect key="frame" x="245" y="319" width="97" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -61,12 +61,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mta-LN-ynX">
-                                <rect key="frame" x="183" y="460" width="27" height="48"/>
+                                <rect key="frame" x="83" y="456" width="233" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NEi-p5-6n3">
+                                <rect key="frame" x="83" y="168" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBI-Pv-NgV">
+                                <rect key="frame" x="269" y="168" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.98158454136547524" blue="0.90385727091300161" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -75,13 +83,15 @@
                         <outlet property="label1" destination="2Cu-BJ-TRN" id="pg2-tb-OYL"/>
                         <outlet property="label2" destination="EEr-4c-vuJ" id="SOl-9l-m5P"/>
                         <outlet property="label3" destination="mta-LN-ynX" id="66C-FA-JT2"/>
+                        <outlet property="switch1" destination="NEi-p5-6n3" id="s6M-Qu-QHm"/>
+                        <outlet property="switch2" destination="xBI-Pv-NgV" id="DAR-jF-7JA"/>
                         <outlet property="textField1" destination="fdj-Vf-NFk" id="M7n-7t-gGz"/>
                         <outlet property="textField2" destination="2Ri-XI-yAN" id="okM-LP-PCk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="135"/>
+            <point key="canvasLocation" x="250.76923076923077" y="134.36018957345971"/>
         </scene>
     </scenes>
     <resources>
