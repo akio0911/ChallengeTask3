@@ -15,8 +15,8 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var label1: UILabel!
     @IBOutlet private weak var label2: UILabel!
     @IBOutlet private weak var label3: UILabel!
-    @IBOutlet weak var switch1: UISwitch!
-    @IBOutlet weak var switch2: UISwitch!
+    @IBOutlet private weak var switch1: UISwitch!
+    @IBOutlet private weak var switch2: UISwitch!
     
     
     override func viewDidLoad() {
@@ -29,7 +29,6 @@ final class ViewController: UIViewController {
     // 計算をする
     @IBAction func buttonPressed(_ sender: UIButton) {
         
-        print(switch1.isOn)
         // 入力
         var num1 = Int(textField1.text ?? "") ?? 0
         if switch1.isOn {
